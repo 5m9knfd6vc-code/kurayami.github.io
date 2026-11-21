@@ -267,3 +267,98 @@ img { max-width: 100%; display: block; }
 
   .row { grid-template-columns: 340px 1fr; }
 }
+
+/* bootstrap ломал часть стилей, возвращаем как было */
+a:hover { color: var(--text); }
+
+.card {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+}
+
+.row {
+  margin: 0;
+}
+.row > * {
+  width: auto;
+  padding: 0;
+  margin-top: 0;
+}
+.row > p { max-width: 640px; }
+
+.mark { padding: 0; }
+
+/* кнопки и форма */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.my-btn {
+  padding: 12px 24px;
+  font-family: inherit;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+.my-btn:hover { border-color: var(--text); }
+
+.my-btn-accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.my-btn-accent:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.more-text {
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 640px;
+}
+.contact-form label {
+  font-size: 14px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.contact-form .form-control {
+  margin-bottom: 8px;
+  background: var(--cell);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+.contact-form .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: none;
+}
+.contact-form .my-btn { align-self: flex-start; margin-top: 8px; }
+
+#formMessage { margin-top: 16px; }
+#formMessage.text-danger { color: var(--accent) !important; }
+
+.modal-content {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+.modal-header,
+.modal-footer { border-color: var(--line); }
