@@ -13,7 +13,7 @@ if (showMore != null && moreText != null) {
   });
 }
 
-// отдать душу + модалка
+
 const giveSoul = document.querySelector('#giveSoul');
 const soulsCount = document.querySelector('#soulsCount');
 const modalText = document.querySelector('#modalText');
@@ -36,7 +36,7 @@ if (giveSoul != null) {
   });
 }
 
-// навыки героя, потом можно будет брать через fetch
+
 const skills = [
   { icon: '≡', title: 'Shadowraze', type: 'удар тенью', text: 'Три волны тьмы на разном расстоянии от героя. Каждая наносит урон всем врагам в своей зоне.' },
   { icon: '∞', title: 'Necromastery', type: 'сбор душ', text: 'За каждого убитого врага Невермор получает душу. Чем больше душ, тем сильнее его атака.' },
@@ -62,7 +62,7 @@ if (projects != null) {
   projects.innerHTML = res;
 }
 
-// форма на странице контактов
+
 const form = document.querySelector('#contactForm');
 const formMessage = document.querySelector('#formMessage');
 
